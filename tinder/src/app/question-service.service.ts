@@ -3,6 +3,7 @@ import { environment } from 'src/environments/environment';
 import { Observable,of } from 'rxjs';
 import { HttpClient } from '@angular/common/http'
 import { Question } from './question';
+import {map} from 'rxjs/operators';
 
 
 @Injectable({
@@ -14,7 +15,13 @@ export class QuestionServiceService {
   restApi = environment.API_HOST + ":" + environment.API_PORT;
 
    getQuestions(): Observable<Question[]> {
-    // return this.http.get<Question[]>(this.restApi + '/questions');
+    return this.http.get<any>(this.restApi + '/questions').pipe(
+      map((data)=>{
+        return data.questions;
+      })
+    );
+    
+    
     return of([
       {
         id:1,
