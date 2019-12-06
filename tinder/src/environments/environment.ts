@@ -5,8 +5,7 @@
 export const environment = {
   production: false,
   // rest API config
-  API_HOST: 'http://',
-  API_PORT: 8080,
+  API_HOST: 'https://dernikolaushackt.ddnss.de/'
 };
 
 /*
