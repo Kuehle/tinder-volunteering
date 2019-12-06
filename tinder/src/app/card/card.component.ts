@@ -21,7 +21,7 @@ export class CardComponent implements OnInit {
   @Input() index:number; 
 
   animationState: string;
-  public index = 0;
+  public animation_index = 0;
 
   constructor() { }
 
@@ -37,7 +37,7 @@ export class CardComponent implements OnInit {
 
   resetAnimationState(state) {
     this.animationState = '';
-    this.index++;
+    this.animation_index++;
   }
 
 
