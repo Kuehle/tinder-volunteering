@@ -1,9 +1,9 @@
 export class Question {
-    constructor(id:number, question:string){
+    constructor(id:number, content:string){
         this.id = id;
-        this.question = question;
+        this.content = content;
     }
 
     id:number;
-    question:string;
+    content:string;
 }
