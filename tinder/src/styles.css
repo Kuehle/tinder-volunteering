@@ -1,17 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
-@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Open+Sans&display=swap');
 
-html, body { height: 100%; }
-body { margin: 0; background-color: #212124; color: white;
-}
-
-p{
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
-}
-h1,h2,h3{
-    font-family: 'Didact Gothic', sans-serif;
-}
 
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -61,4 +49,21 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Open+Sans&display=swap');
+
+html, body { height: 100%; }
+body { 
+    margin: 0; background-color: #212124; color: white;
+}
+
+
+
+p,h4{
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+h1,h2,h3{
+    font-family: 'Didact Gothic', sans-serif;
 }
