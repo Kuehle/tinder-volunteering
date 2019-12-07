@@ -5,13 +5,30 @@ class="card"
 (swipeleft)='startAnimation("swipeleft")' 
 (swiperight)='startAnimation("swiperight")'
 > 
+
     
         <div class="header-img"> 
             <img src="https://www.responsiblebusiness.com/wp-content/uploads/2018/03/Forests.jpeg" alt="Question image">
         </div>
 
         <div class="question">
-            <p>{{question.content}}</p>
+            <h2>{{question.content}}</h2>
         </div>
+
+        <p class="tooltip">Ganz klassisch kannst du nach links oder rechts swipen</p>
+
+
+        <div class="decide">
+
+                <div>
+                    <button (click)='startAnimation("swiperight")' mat-button>Ja</button>
+                </div>
+
+                <div>
+                    <button (click)='startAnimation("swipeleft")' mat-button>Nein</button>
+                </div>
+
+        </div>
+
 </div>
 
