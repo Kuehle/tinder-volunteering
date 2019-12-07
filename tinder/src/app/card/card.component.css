@@ -1,4 +1,33 @@
 .card{
-    padding: 2em; 
-    background-color: #eee; 
+    background: #212124;
+    position: relative; 
+}
+
+
+.card .header-img{
+    height: 30%; 
+    width: 100%; 
+    display: flex; 
+    align-content: stretch;
+    align-items: stretch;
+}
+
+.card .header-img img{
+    object-fit: cover;
+    flex: 1;
+    display: block; 
+
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+    margin-bottom: 0;
+
+}
+
+.question{
+    background-color: #fff; 
 }

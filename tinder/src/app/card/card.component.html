@@ -1,13 +1,17 @@
-<mat-card
-    class="card"
-    [@cardAnimator]="animationState"
-    (@cardAnimator.done)="resetAnimationState($event)"
-    (swipeleft)='startAnimation("swipeleft")' 
-    (swiperight)='startAnimation("swiperight")'
+<div
+class="card"
+[@cardAnimator]="animationState"
+(@cardAnimator.done)="resetAnimationState($event)"
+(swipeleft)='startAnimation("swipeleft")' 
+(swiperight)='startAnimation("swiperight")'
 > 
+    
+        <div class="header-img"> 
+            <img src="https://www.responsiblebusiness.com/wp-content/uploads/2018/03/Forests.jpeg" alt="Question image">
+        </div>
 
-
-    <p>{{question.content}}</p>
-
-</mat-card>
+        <div class="question">
+            <p>{{question.content}}</p>
+        </div>
+</div>
 
