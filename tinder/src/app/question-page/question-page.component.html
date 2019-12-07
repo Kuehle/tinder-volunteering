@@ -1,5 +1,8 @@
 <div id="questions">
-    <h1>Questions</h1>
-    <app-card [question] = 'question' [index] = 'i' *ngFor="let question of questions; index as i;"></app-card>
+    <h1>MÖCHTEST DU IN DEINEM EHRENAMT...</h1>
+    <mat-progress-bar class="progress-bar bg-success" mode="determinate" value="{{(questionIndex/length)*100}}" ></mat-progress-bar>
+    <app-card (swipeleft)="nextQuestion(false)" (swiperight)="nextQuestion(true)" [question] = 'questions[questionIndex]' ></app-card>
         
+
+    <!-- <button (click) ="nextQuestion()"> Test</button> -->
 </div>
