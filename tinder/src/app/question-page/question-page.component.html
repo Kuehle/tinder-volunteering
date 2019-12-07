@@ -1,8 +1,9 @@
-<div id="questions">
-    <h1>MÖCHTEST DU IN DEINEM EHRENAMT...</h1>
-    <mat-progress-bar class="progress-bar bg-success" mode="determinate" value="{{(questionIndex/length)*100}}" ></mat-progress-bar>
-    <app-card (swipeleft)="nextQuestion(false)" (swiperight)="nextQuestion(true)" [question] = 'questions[questionIndex]' ></app-card>
-        
+<div class="question-wrap">
 
-    <!-- <button (click) ="nextQuestion()"> Test</button> -->
+    <mat-progress-bar class="progress-bar bg-success" mode="determinate" value="{{(questionIndex/length)*100}}" ></mat-progress-bar>
+
+    <div id="questions">
+        <app-card (swipeleft)="nextQuestion(false)" (swiperight)="nextQuestion(true)" [question] = 'questions[questionIndex]' ></app-card>
+    </div>
+
 </div>

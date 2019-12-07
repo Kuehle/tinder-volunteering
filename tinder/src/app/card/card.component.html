@@ -1,3 +1,8 @@
+
+<div class="grey-area">
+
+</div>
+
 <div
 class="card"
 [@cardAnimator]="animationState"
@@ -6,29 +11,36 @@ class="card"
 (swiperight)='startAnimation("swiperight")'
 > 
 
-    
-        <div class="header-img"> 
-            <img src="https://www.responsiblebusiness.com/wp-content/uploads/2018/03/Forests.jpeg" alt="Question image">
+    <div class="card-inner">
+
+        <div class="header-img"
+            [ngStyle]="{backgroundImage: 'url(https://www.responsiblebusiness.com/wp-content/uploads/2018/03/Forests.jpeg)', width: '100%', height: '200px', backgroundSize: 'cover'}"
+        > 
         </div>
 
-        <div class="question">
-            <h2>{{question.content}}</h2>
+      
+
+        <div class="card-lower">
+
+            <div class="decide">
+                    <img src="../assets/cross.png" (click)='startAnimation("swipeleft")'>
+            </div>
+
+            <div class="question">
+                <h2>{{question.content}}</h2>
+            </div>
+
+           
+            <div class="decide">
+                    <img src="../assets/check.png" (click)='startAnimation("swiperight")'>
+            </div>
         </div>
 
         <p class="tooltip">Ganz klassisch kannst du nach links oder rechts swipen</p>
 
 
-        <div class="decide">
-
-                <div>
-                    <button (click)='startAnimation("swiperight")' mat-button>Ja</button>
-                </div>
-
-                <div>
-                    <button (click)='startAnimation("swipeleft")' mat-button>Nein</button>
-                </div>
-
-        </div>
+    
+    </div>
 
 </div>
 

@@ -1,10 +1,21 @@
+.question-wrap{
+    height: 60vh; 
+}
+
 #questions{
+    margin-top: 40px; 
     background-clip: #212124;
-    padding: 10%;
 }
 
 h1{
     font-size: x-large;
     font-weight: 800;
     padding-bottom: 30px;
+}
+
+.mat-progress-bar{
+    width: 30%; 
+    margin: 0 auto; 
+    height: 1em;
+    border-radius: 20px;  
 }

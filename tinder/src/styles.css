@@ -51,8 +51,11 @@ table {
 	border-spacing: 0;
 }
 
+
+/* custom global styles */
+
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
-@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic:800|Open+Sans&display=swap');
 
 html, body { height: 100%; }
 body { 
@@ -65,10 +68,22 @@ p,h4{
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
 h1,h2,h3{
-    font-family: 'Didact Gothic', sans-serif;
+	font-family: 'Didact Gothic', sans-serif;
+	font-weight: 800; 
 }
 
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  .wrap{
+	  max-width: 1200px;
+	  padding: 0 5%; 
+	  margin: 0 auto; 
+  }
+
+  #logo{
+	  height: 100px; 
+	  max-width: 200px; 
   }
